@@ -1,0 +1,131 @@
+body {
+    overflow-x: hidden;
+    font-family: sans-serif;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .navbar {
+    text-transform: uppercase;
+    background-color:#114427;
+  }
+  
+  .navbar .nav-link {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  .navbar .nav-item .nav-link:hover {
+  border: 3px;
+  background-color: rgb(207, 207, 207);
+  border-radius: 5px;
+  color: #551616;
+  }
+  
+  .navbar .nav-item:active {
+  border: rgb(0, 0, 0);
+  border-width: 3px;
+  border-radius: 3px;
+  }
+  
+  .navbar .navbar-brand {
+    color: white;
+    font-size: 16px;
+  }
+  
+  .container{
+    margin-top: 2%;
+  }
+  
+  .float-left, .col-md-6{
+      margin-top: 2%;
+      float: left;
+      min-height: 200px;
+  }
+  
+  
+  .leftcolumn {   
+      float: left;
+      width: 70%;
+    }
+    
+    /* Right column */
+    .rightcolumn {
+      float: left;
+      width: 30%;
+      height: 100%;
+      padding-left: 20px;
+    }
+    
+    /* Fake image */
+    .fakeimg {
+      padding: 20px;
+      margin-top: 20px;
+      background-image: url("../History/air.jpg");
+      background-repeat: no-repeat;
+      
+    }
+  
+    /* Add a card effect for articles */
+    .card-left {
+       background-color: rgb(109, 150, 119);
+       padding: 30px;
+       margin-top: 50px;
+       margin-bottom: 30px;
+       margin-left: 250px;
+       border-radius: 10px;
+       border: none;
+       width: 1500px;
+       height: 120px;
+       font-size: 10px;
+       box-shadow: 5px 5px 10px #888888;
+    }
+  
+    .card-left:hover{
+        background-color: #114427;
+        color: white;
+        cursor: pointer;
+    }
+
+      /* Add a card effect for articles */
+
+
+   .card-left h2 {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 5px;
+   }
+
+   .card-left i {
+    font-size: 15px;
+    top: 30px;
+   }
+  
+   .card-left p {
+    margin-top: -15px;
+    margin-left: 5px;
+  }
+  
+  .card p {
+    margin-top: 20px;
+  }
+  
+  .links {
+      font-size: 12px;
+  }
+    .right {
+      height:70px;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    @media screen and (max-width: 800px) {
+      .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+      }
+    }

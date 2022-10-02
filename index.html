@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>   
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <title>Home</title>
+    </head>
+    <body>
+        <div class="home">
+            <nav class="navbar navbar-dark navbar-expand-md fixed-top ">
+                <div class="container">
+                    <img class="header-logo" src="/assets/img/ualogo.png" alt="logo" style="  float: left; width: 45px;  height: 45px;"/>
+                    <div class="navbar-brand" style ="margin: 10px;"></a> Intel-Stellar</a></div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle Navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="menu">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link active" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="forum.html">Forum</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="topics.html">Topics</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="landing">
+                <div class="home-wrap">
+                    <div class="home-inner">
+                         <!--image slider start-->
+                        <div class="slider">
+                            <div class="slides">
+                            <!--radio buttons start-->
+                            <input type="radio" name="radio-btn" id="radio1">
+                            <input type="radio" name="radio-btn" id="radio2">
+                            <input type="radio" name="radio-btn" id="radio3">
+                            <!--radio buttons end-->
+                        
+                            <!--slide images start-->
+                            <div class="slide first">
+                            <img src="/assets/img/111.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="/assets/img/222.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="/assets/img/333.jpg" alt="">
+                            </div>
+                            <!--slide images end-->
+                        
+
+                             <!--manual navigation start-->
+                             <div class="navigation-manual">
+                                <label for="radio1" class="manual-btn"></label>
+                                <label for="radio2" class="manual-btn"></label>
+                                <label for="radio3" class="manual-btn"></label>
+                                </div>
+                            <!--manual navigation end-->
+                        </div>
+                       
+                        </div> 
+                        <!--image slider end-->
+
+                        <script>
+                        var counter = 1;
+                        setInterval(function(){
+                        document.getElementById('radio' + counter).checked = true;
+                        counter++;
+                            if(counter > 3){
+                            counter = 1;
+                            }
+                        }, 3000);
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="caption center-block text-center">
+                <br>
+                <br>
+                <h1 style="font-family: myFirstFont;">FORUM FOR EARTH</h1>
+                <h3 style="font-family: myFirstFont;">INTEL-STELLAR</h3>
+                <br>
+                <div class="caption center-block text-center">
+                 <br> <br> <br> <br> <br>
+                    <h4> </h4>
+                </div>
+            </div>
+            <div>
+                <a class="btn btn-outline-light"></a>
+            </div>
+            <div class="container">
+                <div class="row">
+                <div class="col-md-6 align-self-center">
+                    <h3>UA TEAM</h3>
+                    <p> An Entry for NASA International Space App Challenge ​</p>
+                    <a href="about.html" class="btn btn-outline-dark btn-lg">Learn more</a>
+                </div>
+            <div class="col-md-6">
+                <img src="/assets/img/space.png" alt="#" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+
+   <!---Top Picks section--->
+
+   <div class="container-fluid-padding">
+    <div class="row welcome text-center">
+        <div class="col-12">
+            <h3 class="display-4"> TOP PICKS </h3>
+            
+        </div>
+    </div>
+
+<div class="container-fluid-padding">
+    <div class="row text-center padding">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="border">
+                <br>
+                <br>
+                <br>
+                <h3>Air Pollution: Everything You Need to Know </h3>
+                <p> 
+                    June 22, 2021 | Jillian Mackenzie & Jeff Turrentine
+                </p>
+                <!-- Trigger/Open The Modal -->
+                <button id="myBtn">Read More</button>
+                
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h1>June 22, 2021 | Jillian Mackenzie & Jeff Turrentine</h1>
+                        <img src="/assets/img/air.jpg" />
+                        <p>Air pollution refers to the release of pollutants into the air—pollutants that are detrimental to human health and the planet as a whole. According to the World Health Organization (WHO), each year air pollution is responsible for nearly seven million deaths around the globe. Nine out of ten human beings currently breathe air that exceeds the WHO’s guideline limits for pollutants, with those living in low- and middle-income countries suffering the most. In the United States, the Clean Air Act, established in 1970, authorizes the U.S. Environmental Protection Agency (EPA) to safeguard public health by regulating the emissions of these harmful air pollutants.</p>
+                    </div>
+                </div>
+                <script>
+                    // Get the modal
+                    var modal = document.getElementById("myModal");
+                    
+                    // Get the button that opens the modal
+                    var btn = document.getElementById("myBtn");
+                    
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+                    
+                    // When the user clicks the button, open the modal 
+                    btn.onclick = function() {
+                        modal.style.display = "block";
+                    }
+                    
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() {
+                        modal.style.display = "none";
+                    }
+                    
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function(event) {
+                        if (event.target == modal) {
+                        modal.style.display = "none";
+                        }
+                    }
+                    </script>
+                    <!-- End modal button-->
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="border">
+                <br>
+                <br>
+                <br>
+                <h3>Climate Change and Disasters in the Philippines</h3>
+                <p>
+                    January 21, 2022 | Eunice Barbara Novio
+                </p>
+                <!-- Trigger/Open The Modal -->
+            <button id="myBtn1">Read More</button>
+            
+            <!-- The Modal -->
+            <div id="myModal1" class="modal">
+            
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close1">&times;</span>
+                <h1>January 21, 2022 | Eunice Barbara Novio</h1>
+                <img src="assets/img/disaster.jpg" />
+                <p>The Philippines has seen increasing storms and typhoons cause havoc with more frequency, however, some groups of people are more vulnerable to the impacts of climate change than others. Though the climate crisis is a human rights issue, a whole-of-government approach is still needed to address ongoing problems left behind by limited relief packages, slow responses from authorities, and excessive waste.</p>
+              </div>
+            </div>
+            
+            <script>
+            // Get the modal
+            var modal1 = document.getElementById("myModal1");
+            
+            // Get the button that opens the modal
+            var btn1 = document.getElementById("myBtn1");
+            
+            // Get the <span> element that closes the modal
+            var span1 = document.getElementsByClassName("close1")[0];
+            
+            // When the user clicks the button, open the modal 
+            btn1.onclick = function() {
+              modal1.style.display = "block";
+            }
+            
+            // When the user clicks on <span> (x), close the modal
+            span1.onclick = function() {
+              modal1.style.display = "none";
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal1) {
+                modal1.style.display = "none";
+              }
+            }
+            </script>
+            </div>
+        </div>
+        <div class="col-xs-12 col-m-6 col-md-4">
+            <div class="border">
+                <br>
+                <br>
+                <br>
+                <h3>Greenhouse Emissions Rise To Record, Erasing Drop During Pandemic </h3>
+                <p>June 30, 2022 | P. Bhanumati, Mark de Haan, James William Tebrake</p>
+                <!-- Trigger/Open The Modal -->
+            <button id="myBtn2">Read More</button>
+             
+            <!-- The Modal -->
+            <div id="myModal2" class="modal">
+             
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close2">&times;</span>
+                <h1>June 30, 2022 | P. Bhanumati, Mark de Haan, James William Tebrake</h1>
+                <img src="/assets/img/green.jpg" />
+                <p>Emissions of carbon dioxide and other greenhouse gases plunged 4.6 percent in 2020, as lockdowns in the first half of the year restricted global mobility and hampered economic activity. Many hoped that this would mark the beginning of a more permanent shift downwards in emissions.</p>
+                 </p>
+               </div>
+              </div>
+            
+              <script>
+              // Get the modal
+              var modal2 = document.getElementById("myModal2");
+              
+              // Get the button that opens the modal
+              var btn2 = document.getElementById("myBtn2");
+              
+              // Get the <span> element that closes the modal
+              var span2 = document.getElementsByClassName("close2")[0];
+              
+              // When the user clicks the button, open the modal 
+              btn2.onclick = function() {
+                modal2.style.display = "block";
+              }
+              
+              // When the user clicks on <span> (x), close the modal
+              span2.onclick = function() {
+                modal2.style.display = "none";
+              }
+              
+              // When the user clicks anywhere outside of the modal, close it
+              window.onclick = function(event) {
+                if (event.target == modal2) {
+                  modal2.style.display = "none";
+                }
+              }
+              </script>
+              <!-- End modal button-->
+                 
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!---Contact Section--->
+
+<div id="contact">
+    <div class="container-fluid footer">
+        <div class="row">
+            <div class="col-md-3"></div>
+                <div class="col-md-6 text-center">
+                    <h3 class="display-4">UA TEAM</h3>
+                    <strong>Location</strong>
+                    <p><br> Unisite Subdivision, Del Pilar, City of San Fernando, Pampanga 2000</p>
+                    <strong>Contact Info</strong>
+                    <p>apcmendiola.student@ua.edu.ph<br>lfladao.student@ua.edu.ph<br>laymesia.student@ua.edu.ph<br>radtuazon.student@ua.edu.ph<br>eddmanalo.student@ua.edu.ph</p>
+                </div>
+        </div>
+    </div>
+</div>
+
+<script
+src="https://code.jquery.com/jquery-3.4.1.js"
+integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </body>
+</html>
